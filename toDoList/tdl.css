@@ -1,0 +1,225 @@
+/* body {
+    background-image: url("https://images.unsplash.com/photo-1661961112134-fbce0fdf3d99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80");
+ background-image: url("photo-1661961112134-fbce0fdf3d99.avif"); 
+ background-image: linear-gradient(to right, #215f00, #e4e4d9); 
+ background-size: cover; 
+ background-repeat: no-repeat; 
+}*/
+body {
+    background-image: linear-gradient(to right, #3e92cc, #2a628f, #16324f, #18435a);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Mono';
+    color: #007200;
+}
+
+/* 
+.text-cut-out {
+    text-align: center;
+    width: 300px;
+    transform: translateX(500px);
+    padding: 12px;
+    background-color: white;
+    mix-blend-mode: screen;
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label[for="tdl"] {
+    font-size: 2rem;
+    display: inline;
+    font-family: 'Roboto Mono', monospace;
+    transform: translateY(-8px);
+}
+
+div {
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    transform: translateY(-8px);
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 30px;
+
+    font-size: 1.7rem;
+    transition: all 1s;
+    font-family: 'Roboto Mono', monospace;
+
+    caret-color: #007200;
+}
+
+input[type="text"]:focus {
+    width: 400px;
+    background-color: #e9edc9;
+}
+
+
+#Add,
+#Edit {
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+
+    transform: translatey(-5px);
+
+    /*for remove defaul button*/
+    padding: 0;
+    border: none;
+    background: none;
+
+    /* color: #b6be9c; */
+    color: #000;
+}
+
+#Add:hover,
+#Edit:hover {
+    cursor: pointer;
+    color: #007200;
+}
+
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    transform: translateY(7px);
+    cursor: pointer;
+}
+
+/* label {
+    display: block;
+    font-size: 1.8rem;
+} */
+
+
+hr {
+    border-color: #007200;
+}
+
+.overline {
+    text-decoration: line-through;
+}
+
+.none {
+    text-decoration: none;
+}
+
+#completed {
+    color: #c7c2c2;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+P {
+    font-size: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.delete {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+
+    padding: 0;
+    border: none;
+    background: none;
+
+    color: #b6be9c;
+
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: red;
+}
+
+.edit {
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+
+    padding: 0;
+    border: none;
+    background: none;
+
+    color: #b6be9c;
+
+    cursor: pointer;
+}
+
+.edit:hover {
+    color: black;
+}
+
+@media (max-width:820px) {
+
+    input[type="text"] {
+        width: 250px;
+    }
+
+    input[type="text"]:focus {
+        width: 250px;
+    }
+}
+
+@media (max-width:655px) {
+    .container {
+        display: block;
+    }
+
+    label[for="tdl"] {
+        display: block;
+    }
+
+    input[type="text"] {
+        display: inline-block;
+    }
+
+    #Add {
+        display: inline-block;
+        transform: translateY(2px);
+    }
+
+    body {
+        background-repeat: repeat;
+    }
+
+}
+
+.display {
+    display: none !important;
+}
+
+/*add a scroll bar to page :*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
